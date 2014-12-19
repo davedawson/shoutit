@@ -4,6 +4,7 @@ class CreateShout < ActiveRecord::Migration
       t.string :text
       t.string :name
       t.string :twitter
+      t.string :color
       t.boolean :private
     end
   end

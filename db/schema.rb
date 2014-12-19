@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20141219162005) do
     t.string  "text"
     t.string  "name"
     t.string  "twitter"
+    t.string  "color"
     t.boolean "private"
   end
 

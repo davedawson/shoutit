@@ -1,0 +1,16 @@
+<%# provide(:body_class, 'new-car') %>
+<div class="container">
+  <div class="form-wrap">
+    <h1>Shout something</h1>
+    <%= form_for(@shout) do |f| %>
+      <%# render 'shared/error_messages', object: f.object %>
+      <div class="field-wrap">
+        <div class="form-group">
+          <%= f.label :text %>
+          <%= f.text_field :text, :placeholder => "What are you shouting?", :required => "required", :autofocus => true, :tabindex => '1' %>
+        </div>
+      </div>
+      <%= f.submit "Publish", class: "button" %>
+    <% end %>
+  </div>
+</div>
