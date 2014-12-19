@@ -17,11 +17,13 @@ ActiveRecord::Schema.define(version: 20141219191854) do
   enable_extension "plpgsql"
 
   create_table "shouts", force: true do |t|
-    t.string  "text"
-    t.string  "name"
-    t.string  "twitter"
-    t.string  "color"
-    t.boolean "private"
+    t.string   "text"
+    t.string   "name"
+    t.string   "twitter"
+    t.string   "color"
+    t.datetime "expires_at"
+    t.integer  "user"
+    t.boolean  "private"
   end
 
   create_table "users", force: true do |t|
