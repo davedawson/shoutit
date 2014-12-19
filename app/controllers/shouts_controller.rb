@@ -14,6 +14,10 @@ class ShoutsController < ApplicationController
 		end
 	end
 
+	def show
+		@shout = Shout.find params[:id]
+	end
+
 	private
 	    def shout_params
 	      params.require(:shout).permit(

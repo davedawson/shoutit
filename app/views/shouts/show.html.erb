@@ -1,0 +1,12 @@
+<%# provide(:body_class, 'new-car') %>
+<div class="container">
+  <div class="form-wrap">
+    <h1><%= @shout.text %></h1>
+    <% if @shout.name %>
+      <p class="name"><%= @shout.name %></p>
+    <% end %>
+    <% if @shout.twitter %>
+      <p class="twitter"><%= @shout.twitter %></p>
+    <% end %>
+  </div>
+</div>
