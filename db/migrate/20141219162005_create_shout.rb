@@ -5,6 +5,8 @@ class CreateShout < ActiveRecord::Migration
       t.string :name
       t.string :twitter
       t.string :color
+      t.datetime :expires_at
+      t.integer :user
       t.boolean :private
     end
   end

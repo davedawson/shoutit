@@ -1,6 +1,7 @@
 class ShoutsController < ApplicationController
 	def new
 		@shout = Shout.new
+		@shouts = Shout.all
 	end
 	def create
 		@shout = Shout.new
