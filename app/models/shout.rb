@@ -1,4 +1,5 @@
 class Shout < ActiveRecord::Base
+	belongs_to :user, :class_name => :User, :foreign_key => :user
 	def self.create_shout(shout_params)
 		shout = Shout.create(
 			# :title => move_params[:title]
