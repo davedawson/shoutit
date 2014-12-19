@@ -1,0 +1,12 @@
+@import "modules/shortcuts";
+.shout {
+	.shout-wrap {
+		@include center;
+	}
+	h1 {
+		text-align: center;
+		font-weight: bold;
+		font-size: 250px;
+		line-height: 100%;
+	}
+}

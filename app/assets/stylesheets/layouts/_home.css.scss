@@ -1,0 +1,18 @@
+@import "modules/shortcuts";
+.home {
+	.form-wrap {
+		height: 100%;
+		background: #000;
+	}
+	.shouts {
+		font-weight: bold;
+		li {
+			list-style-type: none;
+			display: inline;
+			a {
+				font-weight: bold;
+
+			}
+		}
+	}
+}

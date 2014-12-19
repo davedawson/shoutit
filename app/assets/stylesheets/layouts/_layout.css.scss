@@ -3,8 +3,9 @@
 -------------------------------------------*/
 html, body {
   height: 100%;
-  background: #0c00ff;
+  background: #43ffad;
   color: #fff;
+  font: normal 18px/24px "prenton", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -23,8 +24,8 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   // @include clearfix;
-  min-height: 80%;
-  height: auto !important;
+  // min-height: 80%;
+  // height: auto !important;
   height: 100%;
   .dashboard & {
     // margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
@@ -64,7 +65,7 @@ a, .button, li { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s eas
 
 p, ul, dl, ol, table {
   margin: 0 0 1.5em;
-  font: normal 18px/24px "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font: normal 18px/24px "prenton", Helvetica, Arial, sans-serif;
   color: #666666; }
 label {
   font: normal 18px/24px "freight-sans-pro", Helvetica, Arial, sans-serif;
