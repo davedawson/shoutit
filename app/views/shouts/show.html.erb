@@ -9,4 +9,5 @@
       <p class="twitter"><%= @shout.twitter %></p>
     <% end %>
   </div>
+  <%= link_to 'Like', shout_vote_path(@shout), :class => "button" %>
 </div>
