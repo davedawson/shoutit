@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20141219210934) do
     t.string   "color"
     t.datetime "expires_at"
     t.integer  "user"
+    t.boolean  "active"
     t.boolean  "private"
   end
 

@@ -1,5 +1,9 @@
 <% provide(:body_class, 'shout') %>
 <div class="container">
+  <div class="countdown">
+    <p><%= @shout.expires_at %></p>
+    <span class="down"></span>
+  </div>
   <div class="shout-wrap">
     <h1><%= @shout.text %></h1>
     <% if @shout.name %>

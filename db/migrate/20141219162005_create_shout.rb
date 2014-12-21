@@ -7,6 +7,7 @@ class CreateShout < ActiveRecord::Migration
       t.string :color
       t.datetime :expires_at
       t.integer :user
+      t.boolean :active
       t.boolean :private
     end
   end
