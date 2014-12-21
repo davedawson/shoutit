@@ -1,6 +1,8 @@
 @import "modules/shortcuts";
 .shout {
+	padding: 50px 5%;
 	.shout-wrap {
+		
 		@include center;
 	}
 	h1 {

@@ -7,10 +7,15 @@ jQuery(document).ready(function() {
     countdown: function(){
       	expires = $('.countdown p').html();
     	$(".down").countdown(expires, function(event) {
+    	  //  Convert to %
+    	  // percent = event.strftime('%M.%S')/60
 	      $('h1').css('opacity', '0.' + event.strftime('%M%S') + '');
 	      // $(this).css('display', event.strftime('%D days %H:%M:%S'));
 	    });
     	console.log(expires);
+    },
+    fitText: function() {
+    	$("h1").fitText(0.7);
     }  
   };
     /*-------------------------------------------
@@ -20,5 +25,6 @@ jQuery(document).ready(function() {
     // Call methods like this
 
     shout.countdown();
+    shout.fitText();
 
 });
