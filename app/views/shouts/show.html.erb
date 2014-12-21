@@ -1,7 +1,7 @@
 <% provide(:body_class, 'shout') %>
 <div class="container">
   <div class="countdown">
-    <p><%= @shout.expires_at %></p>
+    <p class="hide"><%= @shout.expires_at %></p>
     <span class="down"></span>
   </div>
   <div class="shout-wrap">
@@ -13,5 +13,5 @@
       <p class="twitter"><%= @shout.twitter %></p>
     <% end %>
   </div>
-  <%= link_to 'Like', shout_vote_path(@shout), :class => "button" %>
+  <%# link_to 'Like', shout_vote_path(@shout), :class => "button" %>
 </div>
