@@ -1,11 +1,18 @@
 Shoutit::Application.routes.draw do
 
   devise_for :users
-  root :to => "shouts#new"
+  # root :to => "shouts#new"
 
   resources :shouts
 
   match "shouts/:id/vote", to: "votes#create", :as => "shout_vote", via: [:get, :post]
+
+  authenticated :user do
+    root :to => "shouts#new", as: :authenticated_root
+  end
+  unauthenticated do
+    root :to => "static_pages#home"
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
