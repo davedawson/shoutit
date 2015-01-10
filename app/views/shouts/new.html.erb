@@ -6,16 +6,13 @@
       <%# render 'shared/error_messages', object: f.object %>
       <div class="field-wrap">
         <div class="form-group">
-          <%= f.text_field :text, :class => "text", :placeholder => "What are you shouting?", :required => "required", :autofocus => true, :tabindex => '1' %>
+          <%= f.text_field :text, :class => "text ish", :placeholder => "ish...", :required => "required", :autofocus => true, :tabindex => '1' %>
         </div>
         <div class="form-group">
-          <%= f.text_field :name, :class => "name", :placeholder => "Name (optional)", :tabindex => '2' %>
+          <%= f.text_field :color, :class => "color background-color", :placeholder => "HEX", :tabindex => '4' %>
         </div>
         <div class="form-group">
-          <%= f.text_field :twitter, :class => "twitter", :placeholder => "Twitter handle (optional)", :tabindex => '3' %>
-        </div>
-        <div class="form-group">
-          <%= f.text_field :color, :class => "color", :placeholder => "HEX", :tabindex => '4' %>
+          <%= f.text_field :color, :class => "color text-color", :placeholder => "HEX", :tabindex => '4' %>
         </div>
       </div>
       <%= f.submit "Publish", class: "button" %>

@@ -3,8 +3,9 @@
 -------------------------------------------*/
 html, body {
   height: 100%;
-  background: #43ffad;
-  color: #fff;
+  // background: #43ffad;
+  background: #fff;
+  color: #000;
   font: normal 18px/24px "prenton", Helvetica, Arial, sans-serif;
 }
 
@@ -27,6 +28,7 @@ body {
   // min-height: 80%;
   // height: auto !important;
   height: 100%;
+  padding: 0 5%;
   .dashboard & {
     // margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
     // min-height: 100%;
@@ -36,6 +38,19 @@ body {
   }
 }
 
+.global-header {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  a {
+    color: #fff;
+  }
+}
 
 .content {
   border: 0;

@@ -2,7 +2,26 @@
 .home {
 	.form-wrap {
 		height: 100%;
-		background: #000;
+		// background: #000;
+		.text {
+			font-weight: 900;
+			color: #000;
+		}
+	}
+	::-webkit-input-placeholder {
+	color: #000;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	color: #000; 
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	color: #000;  
+	}
+
+	:-ms-input-placeholder {  
+	color: #000;  
 	}
 	.shouts {
 		font-weight: bold;

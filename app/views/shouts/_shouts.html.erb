@@ -1,5 +1,5 @@
 <div class="shouts">
-  <ul>test
+  <ul>
     <% @shouts.each do |shout| %>
       <li><%= link_to shout.text, shout_path(shout) %></li>
     <% end %>
