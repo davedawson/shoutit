@@ -1,0 +1,7 @@
+<div class="shouts">
+  <ul>test
+    <% @shouts.each do |shout| %>
+      <li><%= link_to shout.text, shout_path(shout) %></li>
+    <% end %>
+  </ul>
+</div>

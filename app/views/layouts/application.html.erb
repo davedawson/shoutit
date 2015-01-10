@@ -11,8 +11,19 @@
 <body id="<%= body_id(yield(:body_id)) %>" class="<%= body_class(yield(:body_class)) %>">
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
-
-
+	<ul>
+	<% if user_signed_in? %>
+        <li class="parent"><a href="#"><%= current_user.first_name %> <%= current_user.last_name %><span class="caret">&#9660;</b></a>
+          <ul class="children">
+            <li><%= link_to 'Edit Account', edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => "button small" %> 
+          <%= link_to "Login", new_user_session_path, :class => "button small" %>
+        <% end %>
+    </ul>
 <%= yield %>
 
 </body>
